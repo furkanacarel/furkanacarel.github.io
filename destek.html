@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Destek — Rota</title>
+<meta name="description" content="Rota uygulaması için yardım, sık sorulan sorular ve iletişim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f9f9ff;--fg:#191c22;--muted:#5d636f;--accent:#ff6b45;--accent-ink:#ae310f;--card:#fff;--line:#e9eaf2;--sand:#fff2ec}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);font-family:'Inter',system-ui,sans-serif;line-height:1.6}
+  .wrap{max-width:720px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left)) 60px}
+  h1,h2,h3{font-family:'Sora',sans-serif;letter-spacing:-.02em}
+  a{color:var(--accent-ink)}
+  header{padding:22px 0;display:flex;align-items:center;gap:9px}
+  .brand{display:flex;align-items:center;gap:9px;font-family:'Sora';font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--fg)}
+  .brand .dot{width:24px;height:24px;border-radius:7px;background:var(--accent);display:grid;place-items:center;color:#fff;font-size:14px}
+  h1{font-size:1.9rem;margin:16px 0 6px}
+  .sub{color:var(--muted);margin:0 0 28px}
+  .contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:30px}
+  .contact h2{font-size:1.1rem;margin:0 0 6px}
+  .contact p{margin:4px 0;color:var(--muted)}
+  .contact a{font-weight:600}
+  .faq h2{font-size:1.25rem;margin:26px 0 10px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 16px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:600;padding:12px 0;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";float:right;color:var(--accent);font-weight:700}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin:0 0 14px}
+  footer{border-top:1px solid var(--line);margin-top:30px;padding-top:20px;color:var(--muted);font-size:.85rem}
+  footer a{color:var(--muted);text-decoration:none;margin-right:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a class="brand" href="index.html"><span class="dot">◎</span> rota</a></header>
+
+  <h1>Yardım & Destek</h1>
+  <p class="sub">Bir sorun mu var, bir önerin mi? Buradayız.</p>
+
+  <div class="contact">
+    <h2>İletişim</h2>
+    <p>E-posta: <a href="mailto:[destek-e-postası]">[destek-e-postası]</a></p>
+    <p>Genelde <strong>1-2 iş günü</strong> içinde yanıtlıyoruz.</p>
+  </div>
+
+  <div class="faq">
+    <h2>Sık sorulan sorular</h2>
+
+    <details><summary>Rota nasıl çalışır?</summary>
+      <p>Profiline (ilgi alanı, bütçe, tarih) göre şehir önerir, gün gün plan kurar; vize durumu ve tahmini maliyeti gösterir. Planını kaydedip yanında taşırsın.</p></details>
+
+    <details><summary>Üyelik ve fiyatlandırma nedir?</summary>
+      <p>İlk 7 gün şehir keşfi ücretsizdir. Plan yapmak için aylık ya da yıllık üyelik gerekir. Ödeme App Store üzerinden güvenli şekilde alınır; üyeliğini istediğin zaman App Store ayarlarından yönetebilir ya da iptal edebilirsin.</p></details>
+
+    <details><summary>Üyeliğimi nasıl iptal ederim?</summary>
+      <p>iPhone'da Ayarlar → [adın] → Abonelikler → Rota → İptal adımlarını izle. İptal, dönem sonunda geçerli olur.</p></details>
+
+    <details><summary>Verilerim güvende mi?</summary>
+      <p>Evet. Hangi verileri işlediğimizi ve nasıl koruduğumuzu <a href="kvkk.html">Gizlilik / KVKK</a> metnimizde açıkça anlatıyoruz. Hesabını ve verilerini silmeyi talep edebilirsin.</p></details>
+
+    <details><summary>Hesabımı nasıl silerim?</summary>
+      <p>Uygulama içinden hesap silme talebinde bulunabilir ya da <a href="mailto:[destek-e-postası]">[destek-e-postası]</a> adresine yazabilirsin; yasal saklama yükümlülükleri dışındaki verilerin silinir.</p></details>
+  </div>
+
+  <footer>
+    <a href="index.html">Ana sayfa</a>
+    <a href="kvkk.html">Gizlilik / KVKK</a>
+    <span>© <span id="y"></span> Rota</span>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
